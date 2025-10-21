@@ -114,4 +114,4 @@ torchrun --nproc_per_node=$NUM_GPUS examples/multiview.py \
 -o outputs/multiview
 ```
 
-For more inference options and advanced usage, see [docs/inference_multiview.md](./inference_multiview.md).
+For more inference options and advanced usage, see [docs/inference_auto_multiview.md](./inference_auto_multiview.md).
