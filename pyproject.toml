@@ -54,6 +54,7 @@ dependencies = [
   "loguru>=0.7.3",
   "mediapy>=1.2.4",
   "megatron-core>=0.12.1",
+  "ml-dtypes==0.5.3",
   "modelscope>=1.26.0",
   "nltk>=3.9.1",
   "numpy>=1.26.4",
@@ -65,7 +66,7 @@ dependencies = [
   "pillow>=11.1.0",
   "protobuf>=4.25.3",
   "pycocotools>=2.0.10",
-  "pynvml>=12.0.0",
+  "pytest>=8.4.2",
   "pyyaml>=6.0.2",
   "qwen-vl-utils[decord]>=0.0.11",
   "retinaface-py>=0.0.2",
@@ -78,6 +79,7 @@ dependencies = [
   "transformers>=4.51.3",
   "triton>=3.2.0",
   "tyro>=0.9.32",
+  "wandb>=0.22.2",
   "webdataset>=0.2.111",
 ]
 
@@ -85,11 +87,11 @@ dependencies = [
 # This must mirror dependency-groups
 cu128_torch271 = [
   "apex==0.1.0+cu128.torch271",
-  "flash-attn==2.8.3+cu12torch2.7cxx11abiTRUE",
+  "flash-attn==2.8.1+cu12torch2.7cxx11abiTRUE",
   "natten==0.21.0+cu128.torch271",
   "torch==2.7.1+cu128",
   "torchvision==0.22.1+cu128",
-  "transformer-engine==1.13+cu128.torch271",
+  "transformer-engine==2.8.0+cu128.torch271",
   # Torch dependencies
   # Dependencies determined from `uv pip install "torch==2.7.1+cu128" "torchvision==0.22.1+cu128" --index-url https://download.pytorch.org/whl`
   # Issue: https://github.com/astral-sh/uv/issues/14237
@@ -124,7 +126,7 @@ cu128_torch271 = [
   "natten==0.21.0+cu128.torch271",
   "torch==2.7.1+cu128",
   "torchvision==0.22.1+cu128",
-  "transformer-engine==1.13+cu128.torch271",
+  "transformer-engine==2.8.0+cu128.torch271",
   # Torch dependencies
   # Dependencies determined from `uv pip install "torch==2.7.1+cu128" "torchvision==0.22.1+cu128" --index-url https://download.pytorch.org/whl`
   # Issue: https://github.com/astral-sh/uv/issues/14237
@@ -171,7 +173,7 @@ no-build-package = [
 
 [tool.uv.sources]
 apex = [{ index = "cosmos" }]
-flash-attn = [{ url = "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.7cxx11abiTRUE-cp310-cp310-linux_x86_64.whl"}]
+flash-attn = [{ url = "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.1/flash_attn-2.8.1+cu12torch2.7cxx11abiTRUE-cp310-cp310-linux_x86_64.whl"}]
 natten = [{ index = "cosmos" }]
 transformer-engine = [{ index = "cosmos" }]
 torch = [{ index = "cosmos" }]
