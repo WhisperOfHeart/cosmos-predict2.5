@@ -31,15 +31,11 @@ from transformers.activations import ACT2FN
 from transformers.cache_utils import Cache, DynamicCache, SlidingWindowCache, StaticCache
 from transformers.generation import GenerationMixin
 from transformers.modeling_attn_mask_utils import AttentionMaskConverter
+from transformers.modeling_flash_attention_utils import flash_attn_supports_top_left_mask, is_flash_attn_available
 
-try:
-    from transformers.modeling_flash_attention_utils import flash_attn_supports_top_left_mask, is_flash_attn_available
-
-    if is_flash_attn_available():
-        from transformers.modeling_flash_attention_utils import _flash_attention_forward, flash_attn_varlen_func
-except ImportError:
-    print("Transformer version too old, flash_attn_supports_top_left_mask is not available.")
-    is_flash_attn_available = False
+if is_flash_attn_available():
+    from transformers.modeling_flash_attention_utils import _flash_attention_forward
+    from transformers.modeling_flash_attention_utils import _flash_varlen_fn as flash_attn_varlen_func
 from transformers.modeling_outputs import BaseModelOutputWithPast, ModelOutput
 from transformers.modeling_rope_utils import ROPE_INIT_FUNCTIONS
 from transformers.modeling_utils import PreTrainedModel
