@@ -90,7 +90,7 @@ cu128_torch271 = [
   "flash-attn==2.8.1+cu128.torch271; platform_machine == 'x86_64'",
   "natten==0.21.0+cu128.torch271",
   "torch==2.7.1+cu128",
-  "torchvision==0.22.1+cu128",
+  "torchvision==0.22.1+cu128; platform_machine == 'x86_64'",
   "transformer-engine==2.8.0+cu128.torch271",
   # Torch dependencies
   # Dependencies determined from `uv pip install "torch==2.7.1+cu128" "torchvision==0.22.1+cu128" --index-url https://download.pytorch.org/whl`
