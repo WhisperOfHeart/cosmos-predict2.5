@@ -111,7 +111,7 @@ wheels = [
 [[package]]
 name = "apex"
 version = "0.1+cu128.torch27"
-source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
+source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
 dependencies = [
     { name = "packaging", marker = "platform_machine == 'x86_64'" },
 ]
@@ -771,7 +771,7 @@ cu128-torch271 = [
     { name = "nvidia-nvjitlink-cu12" },
     { name = "nvidia-nvtx-cu12" },
     { name = "torch" },
-    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
+    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
     { name = "transformer-engine" },
 ]
 gradio = [
@@ -801,7 +801,7 @@ cu128-torch271 = [
     { name = "nvidia-nvjitlink-cu12" },
     { name = "nvidia-nvtx-cu12" },
     { name = "torch" },
-    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
+    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
     { name = "transformer-engine" },
 ]
 dev = [
@@ -817,7 +817,7 @@ profile = [
 
 [package.metadata]
 requires-dist = [
-    { name = "apex", marker = "platform_machine == 'x86_64' and extra == 'cu128-torch271'", specifier = "==0.1.0", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "apex", marker = "platform_machine == 'x86_64' and extra == 'cu128-torch271'", specifier = "==0.1.0", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
     { name = "attrs", specifier = ">=25.1.0" },
     { name = "av", specifier = ">=15.0.0" },
     { name = "better-profanity", specifier = ">=0.7.0" },
@@ -826,7 +826,7 @@ requires-dist = [
     { name = "decord", marker = "platform_machine == 'x86_64'", specifier = ">=0.6.0" },
     { name = "diffusers", specifier = ">=0.33.1" },
     { name = "einops", specifier = ">=0.8.1" },
-    { name = "flash-attn", marker = "platform_machine == 'x86_64' and extra == 'cu128-torch271'", specifier = "==2.8.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "flash-attn", marker = "platform_machine == 'x86_64' and extra == 'cu128-torch271'", specifier = "==2.8.1", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
     { name = "ftfy", specifier = ">=6.3.1" },
     { name = "fvcore", specifier = ">=0.1.5.post20221221" },
     { name = "h11", specifier = ">=0.16.0" },
@@ -840,7 +840,7 @@ requires-dist = [
     { name = "megatron-core", specifier = ">=0.12.1" },
     { name = "ml-dtypes", specifier = "==0.5.3" },
     { name = "modelscope", specifier = ">=1.26.0" },
-    { name = "natten", marker = "extra == 'cu128-torch271'", specifier = "==0.21.0", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "natten", marker = "extra == 'cu128-torch271'", specifier = "==0.21.0", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
     { name = "nltk", specifier = ">=3.9.1" },
     { name = "numpy", specifier = ">=1.26.4" },
     { name = "nvidia-cublas-cu12", marker = "extra == 'cu128-torch271'", specifier = "==12.8.3.14" },
@@ -875,10 +875,10 @@ requires-dist = [
     { name = "sentencepiece", specifier = ">=0.2.0" },
     { name = "setuptools", specifier = ">=80.9.0" },
     { name = "termcolor", specifier = ">=3.1.0" },
-    { name = "torch", marker = "extra == 'cu128-torch271'", specifier = "==2.7.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
-    { name = "torchvision", marker = "platform_machine == 'x86_64' and extra == 'cu128-torch271'", specifier = "==0.22.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "torch", marker = "extra == 'cu128-torch271'", specifier = "==2.7.1", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "torchvision", marker = "platform_machine == 'x86_64' and extra == 'cu128-torch271'", specifier = "==0.22.1", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
     { name = "tqdm", specifier = ">=4.66.5" },
-    { name = "transformer-engine", marker = "extra == 'cu128-torch271'", specifier = "==2.8.0", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "transformer-engine", marker = "extra == 'cu128-torch271'", specifier = "==2.8.0", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
     { name = "transformers", specifier = ">=4.51.3" },
     { name = "triton", specifier = ">=3.2.0" },
     { name = "tyro", specifier = ">=0.9.32" },
@@ -889,9 +889,9 @@ provides-extras = ["cu128-torch271", "gradio", "profile"]
 
 [package.metadata.requires-dev]
 cu128-torch271 = [
-    { name = "apex", marker = "platform_machine == 'x86_64'", specifier = "==0.1.0", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
-    { name = "flash-attn", marker = "platform_machine == 'x86_64'", specifier = "==2.8.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
-    { name = "natten", specifier = "==0.21.0", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "apex", marker = "platform_machine == 'x86_64'", specifier = "==0.1.0", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "flash-attn", marker = "platform_machine == 'x86_64'", specifier = "==2.8.1", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "natten", specifier = "==0.21.0", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
     { name = "nvidia-cublas-cu12", specifier = "==12.8.3.14" },
     { name = "nvidia-cuda-cupti-cu12", specifier = "==12.8.57" },
     { name = "nvidia-cuda-nvrtc-cu12", specifier = "==12.8.61" },
@@ -906,9 +906,9 @@ cu128-torch271 = [
     { name = "nvidia-nccl-cu12", specifier = "==2.26.2" },
     { name = "nvidia-nvjitlink-cu12", specifier = "==12.8.61" },
     { name = "nvidia-nvtx-cu12", specifier = "==12.8.55" },
-    { name = "torch", specifier = "==2.7.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
-    { name = "torchvision", marker = "platform_machine == 'x86_64'", specifier = "==0.22.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
-    { name = "transformer-engine", specifier = "==2.8.0", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "torch", specifier = "==2.7.1", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "torchvision", marker = "platform_machine == 'x86_64'", specifier = "==0.22.1", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "transformer-engine", specifier = "==2.8.0", index = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
 ]
 dev = [
     { name = "pyrefly", specifier = ">=0.37.0" },
@@ -1239,7 +1239,7 @@ wheels = [
 [[package]]
 name = "flash-attn"
 version = "2.8.1+cu128.torch27"
-source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
+source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
 dependencies = [
     { name = "einops", marker = "platform_machine == 'x86_64'" },
     { name = "torch", marker = "platform_machine == 'x86_64'" },
@@ -2279,7 +2279,7 @@ wheels = [
 [[package]]
 name = "natten"
 version = "0.21.0+cu128.torch27"
-source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
+source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
 dependencies = [
     { name = "torch" },
 ]
@@ -3814,7 +3814,7 @@ dependencies = [
     { name = "opencv-python" },
     { name = "torch" },
     { name = "torchvision", version = "0.22.1", source = { registry = "https://pypi.org/simple" }, marker = "platform_machine != 'x86_64'" },
-    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
+    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4c/de/f90cc5c235b8ccc8d893b0616a5d7ec59c59fe19339fa3b7fa7867b9f1ff/retinaface_py-0.0.2-py3-none-any.whl", hash = "sha256:d8cc969841714e4275c35f2cbcec951b88e23a583608588c6c4ecd985a71d66d", size = 37388, upload-time = "2023-02-14T15:45:16.209Z" },
@@ -4541,7 +4541,7 @@ wheels = [
 [[package]]
 name = "torch"
 version = "2.7.1+cu128"
-source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
+source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
 dependencies = [
     { name = "filelock" },
     { name = "fsspec" },
@@ -4580,7 +4580,7 @@ dependencies = [
     { name = "numpy", version = "2.3.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13' and sys_platform != 'darwin'" },
     { name = "torch", marker = "python_full_version >= '3.13' and sys_platform != 'darwin'" },
     { name = "torchvision", version = "0.22.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13' and platform_machine != 'x86_64' and sys_platform != 'darwin'" },
-    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform != 'darwin'" },
+    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform != 'darwin'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/6f/36/574c0c46e818533b78b3c09505211162918188325ab4165ef11a3f295755/torchprofile-0.0.4.tar.gz", hash = "sha256:96b6da17d752a06b02977e078aea95614893b31d4117dd5dcd081f30ce65611b", size = 4557, upload-time = "2021-06-22T04:58:03.592Z" }
 wheels = [
@@ -4641,7 +4641,7 @@ wheels = [
 [[package]]
 name = "torchvision"
 version = "0.22.1+cu128"
-source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
+source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
 resolution-markers = [
     "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform == 'darwin'",
     "python_full_version == '3.12.*' and platform_machine == 'x86_64' and sys_platform == 'darwin'",
@@ -4690,7 +4690,7 @@ wheels = [
 [[package]]
 name = "transformer-engine"
 version = "2.8.0+cu128.torch27"
-source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
+source = { registry = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
 dependencies = [
     { name = "einops" },
     { name = "importlib-metadata" },

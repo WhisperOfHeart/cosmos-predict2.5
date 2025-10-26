@@ -182,9 +182,7 @@ cosmos-gradio = [{ path = "./packages/cosmos-gradio", editable = true }]
 
 [[tool.uv.index]]
 name = "cosmos"
-# HACK(joallen)
-url = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple"
-# url = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/simple"
+url = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple"
 explicit = true
 
 [tool.hatch.build.targets.sdist]
