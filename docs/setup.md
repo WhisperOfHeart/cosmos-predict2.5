@@ -19,6 +19,17 @@ cd cosmos-predict2.5
 
 Install system dependencies:
 
+```shell
+sudo apt-get install \
+    curl \
+    ffmpeg \
+    git \
+    libgl1 \
+    libglib2.0-0 \
+    tree \
+    wget
+```
+
 [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ```shell

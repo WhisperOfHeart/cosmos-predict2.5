@@ -14,11 +14,15 @@
 # limitations under the License.
 
 import torch
-from apex.multi_tensor_apply import multi_tensor_applier
 from torch.distributed._functional_collectives import AsyncCollectiveTensor
 from torch.distributed._tensor.api import DTensor
 
 from cosmos_predict2._src.reason1.utils import distributed
+
+try:
+    from apex.multi_tensor_apply import multi_tensor_applier
+except Exception:
+    multi_tensor_applier = None
 
 
 def get_local_tensor_if_DTensor(tensor: torch.Tensor | DTensor) -> torch.Tensor:
@@ -135,7 +139,7 @@ class FusedAdam(torch.optim.Optimizer):
 
             self._step_supports_amp_scaling = True
 
-        if multi_tensor_applier.available:
+        if multi_tensor_applier is not None and multi_tensor_applier.available:
             import amp_C
 
             # Skip buffer
