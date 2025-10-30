@@ -124,8 +124,8 @@ dependencies = [
     { name = "packaging", marker = "platform_machine == 'x86_64'" },
 ]
 wheels = [
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/apex-0.1%2Bcu128.torch27-cp310-cp310-linux_x86_64.whl", hash = "sha256:585983fc5ae2005797cec49d91acfd49557870c555c56af34c07259798bbfd8a" },
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/apex-0.1%2Bcu128.torch27-cp312-cp312-linux_x86_64.whl", hash = "sha256:58f71d0132a306add63ff8be73cb78d5dcec9c8f572ce133a2d4efecc58f39de" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/apex-0.1%2Bcu128.torch27-cp310-cp310-linux_x86_64.whl", hash = "sha256:5bde7cc514a9a3f1f605db921a9d388484444f42ccc25a1badc01873b8cddb19" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/apex-0.1%2Bcu128.torch27-cp312-cp312-linux_x86_64.whl", hash = "sha256:77e3514e5444758f9a4e96583f1941db2c941391eca4114f54eaf889e045d6c3" },
 ]
 
 [[package]]
@@ -789,7 +789,7 @@ cu128-torch271 = [
     { name = "nvidia-nvjitlink-cu12" },
     { name = "nvidia-nvtx-cu12" },
     { name = "torch" },
-    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
+    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "platform_machine == 'x86_64'" },
     { name = "transformer-engine" },
 ]
 gradio = [
@@ -819,7 +819,7 @@ cu128-torch271 = [
     { name = "nvidia-nvjitlink-cu12" },
     { name = "nvidia-nvtx-cu12" },
     { name = "torch" },
-    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
+    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "platform_machine == 'x86_64'" },
     { name = "transformer-engine" },
 ]
 dev = [
@@ -894,8 +894,8 @@ requires-dist = [
     { name = "sentencepiece", specifier = ">=0.2.0" },
     { name = "setuptools", specifier = ">=80.9.0" },
     { name = "termcolor", specifier = ">=3.1.0" },
-    { name = "torch", marker = "extra == 'cu128-torch271'", specifier = "==2.7.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
-    { name = "torchvision", marker = "platform_machine == 'x86_64' and extra == 'cu128-torch271'", specifier = "==0.22.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "torch", marker = "extra == 'cu128-torch271'", specifier = "==2.7.1", index = "https://download.pytorch.org/whl/cu128" },
+    { name = "torchvision", marker = "platform_machine == 'x86_64' and extra == 'cu128-torch271'", specifier = "==0.22.1", index = "https://download.pytorch.org/whl/cu128" },
     { name = "tqdm", specifier = ">=4.66.5" },
     { name = "transformer-engine", marker = "extra == 'cu128-torch271'", specifier = "==2.8.0", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
     { name = "transformers", specifier = ">=4.51.3" },
@@ -925,8 +925,8 @@ cu128-torch271 = [
     { name = "nvidia-nccl-cu12", specifier = "==2.26.2" },
     { name = "nvidia-nvjitlink-cu12", specifier = "==12.8.61" },
     { name = "nvidia-nvtx-cu12", specifier = "==12.8.55" },
-    { name = "torch", specifier = "==2.7.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
-    { name = "torchvision", marker = "platform_machine == 'x86_64'", specifier = "==0.22.1", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
+    { name = "torch", specifier = "==2.7.1", index = "https://download.pytorch.org/whl/cu128" },
+    { name = "torchvision", marker = "platform_machine == 'x86_64'", specifier = "==0.22.1", index = "https://download.pytorch.org/whl/cu128" },
     { name = "transformer-engine", specifier = "==2.8.0", index = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" },
 ]
 dev = [
@@ -1191,7 +1191,7 @@ dependencies = [
     { name = "numpy", version = "2.3.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13' and platform_machine == 'aarch64'" },
 ]
 wheels = [
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/decord-0.6.0%2Bcu128.torch27-cp310-cp310-linux_aarch64.whl", hash = "sha256:d2b855c94ddc08c84fbb256011446fcaf8dfa3dbe87b8a6fb45f746cd9c57994" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/decord-0.6.0%2Bcu128.torch27-cp310-cp310-linux_aarch64.whl", hash = "sha256:d74828c2f7bcaa8ab54b061a92c25738ebf5d6171145f463d5e90294cf6d2c54" },
 ]
 
 [[package]]
@@ -1316,7 +1316,7 @@ dependencies = [
     { name = "torch", marker = "platform_machine == 'x86_64'" },
 ]
 wheels = [
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/flash_attn-2.8.1%2Bcu128.torch27-cp310-cp310-linux_x86_64.whl", hash = "sha256:653959a26ba51d82bda9cd34a4d9bcd5092873bada4032b05b1c581529e1e7d6" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/flash_attn-2.8.1%2Bcu128.torch27-cp310-cp310-linux_x86_64.whl", hash = "sha256:4006085770aaf00c98a561daac2e655341fbe674a60d5ffc575b6811035aac90" },
 ]
 
 [[package]]
@@ -2371,9 +2371,9 @@ dependencies = [
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/natten-0.21.0%2Bcu128.torch27-cp310-cp310-linux_aarch64.whl", hash = "sha256:be0e9da1094a2cc0eb75e330470b0b455051f5f9dadbc5bba40cbd70d752f832" },
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/natten-0.21.0%2Bcu128.torch27-cp310-cp310-linux_x86_64.whl", hash = "sha256:8180901378f516b7e0e1a5d56f6903353e1b095d2753876e52970b1b196b7021" },
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/natten-0.21.0%2Bcu128.torch27-cp312-cp312-linux_x86_64.whl", hash = "sha256:8d79f20591882c1ac395d0e5135510a274b7d24a32f9294c047dc5b1f5e6b321" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/natten-0.21.0%2Bcu128.torch27-cp310-cp310-linux_aarch64.whl", hash = "sha256:803a446eddc303e663f12f5c9df28f7d62b235246b6c562f466ca28cb19ee7f1" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/natten-0.21.0%2Bcu128.torch27-cp310-cp310-linux_x86_64.whl", hash = "sha256:bbfc51cf240e67f8ba9fe1acaa62ec451d2875190dd81b72eb28ae73dbaaaeef" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/natten-0.21.0%2Bcu128.torch27-cp312-cp312-linux_x86_64.whl", hash = "sha256:93b98b35435dc9719b66626914c546c3eff843f40cea2ac73373de1871ccff26" },
 ]
 
 [[package]]
@@ -3917,7 +3917,7 @@ dependencies = [
     { name = "opencv-python" },
     { name = "torch" },
     { name = "torchvision", version = "0.22.1", source = { registry = "https://pypi.org/simple" }, marker = "platform_machine != 'x86_64'" },
-    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "platform_machine == 'x86_64'" },
+    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "platform_machine == 'x86_64'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4c/de/f90cc5c235b8ccc8d893b0616a5d7ec59c59fe19339fa3b7fa7867b9f1ff/retinaface_py-0.0.2-py3-none-any.whl", hash = "sha256:d8cc969841714e4275c35f2cbcec951b88e23a583608588c6c4ecd985a71d66d", size = 37388, upload-time = "2023-02-14T15:45:16.209Z" },
@@ -4660,7 +4660,7 @@ wheels = [
 [[package]]
 name = "torch"
 version = "2.7.1+cu128"
-source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
+source = { registry = "https://download.pytorch.org/whl/cu128" }
 dependencies = [
     { name = "filelock" },
     { name = "fsspec" },
@@ -4689,6 +4689,19 @@ dependencies = [
 wheels = [
     { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp310-cp310-manylinux_2_28_aarch64.whl", hash = "sha256:aca3472608e3c92df5166537595687b53a6c997082478b372427b043dbed98d0" },
     { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl", hash = "sha256:d6c3cba198dc93f93422a8545f48a6697890366e4b9701f54351fc27e2304bd3" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp310-cp310-win_amd64.whl", hash = "sha256:5174f02de8ca14df87c8e333c4c39cf3ce93a323c9d470d690301d110a053b3c" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp311-cp311-manylinux_2_28_aarch64.whl", hash = "sha256:3a0954c54fd7cb9f45beab1272dece2a05b0e77023c1da33ba32a7919661260f" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp311-cp311-manylinux_2_28_x86_64.whl", hash = "sha256:c301dc280458afd95450af794924c98fe07522dd148ff384739b810e3e3179f2" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp311-cp311-win_amd64.whl", hash = "sha256:138c66dcd0ed2f07aafba3ed8b7958e2bed893694990e0b4b55b6b2b4a336aa6" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp312-cp312-manylinux_2_28_aarch64.whl", hash = "sha256:268e54db9f0bc2b7b9eb089852d3e592c2dea2facc3db494100c3d3b796549fa" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:0b64f7d0a6f2a739ed052ba959f7b67c677028c9566ce51997f9f90fe573ddaa" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp312-cp312-win_amd64.whl", hash = "sha256:2bb8c05d48ba815b316879a18195d53a6472a03e297d971e916753f8e1053d30" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:d56d29a6ad7758ba5173cc2b0c51c93e126e2b0a918e874101dc66545283967f" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:9560425f9ea1af1791507e8ca70d5b9ecf62fed7ca226a95fcd58d0eb2cca78f" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp313-cp313-win_amd64.whl", hash = "sha256:500ad5b670483f62d4052e41948a3fb19e8c8de65b99f8d418d879cbb15a82d6" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp313-cp313t-manylinux_2_28_aarch64.whl", hash = "sha256:f112465fdf42eb1297c6dddda1a8b7f411914428b704e1b8a47870c52e290909" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp313-cp313t-manylinux_2_28_x86_64.whl", hash = "sha256:c355db49c218ada70321d5c5c9bb3077312738b99113c8f3723ef596b554a7b9" },
+    { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp313-cp313t-win_amd64.whl", hash = "sha256:e27e5f7e74179fb5d814a0412e5026e4b50c9e0081e9050bc4c28c992a276eb1" },
 ]
 
 [[package]]
@@ -4699,7 +4712,7 @@ dependencies = [
     { name = "numpy", version = "2.3.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13' and sys_platform != 'darwin'" },
     { name = "torch", marker = "python_full_version >= '3.13' and sys_platform != 'darwin'" },
     { name = "torchvision", version = "0.22.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13' and platform_machine != 'x86_64' and sys_platform != 'darwin'" },
-    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }, marker = "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform != 'darwin'" },
+    { name = "torchvision", version = "0.22.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform != 'darwin'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/6f/36/574c0c46e818533b78b3c09505211162918188325ab4165ef11a3f295755/torchprofile-0.0.4.tar.gz", hash = "sha256:96b6da17d752a06b02977e078aea95614893b31d4117dd5dcd081f30ce65611b", size = 4557, upload-time = "2021-06-22T04:58:03.592Z" }
 wheels = [
@@ -4768,7 +4781,7 @@ wheels = [
 [[package]]
 name = "torchvision"
 version = "0.22.1+cu128"
-source = { registry = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple" }
+source = { registry = "https://download.pytorch.org/whl/cu128" }
 resolution-markers = [
     "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform == 'darwin'",
     "python_full_version == '3.12.*' and platform_machine == 'x86_64' and sys_platform == 'darwin'",
@@ -4791,6 +4804,15 @@ dependencies = [
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl", hash = "sha256:538f4db667286d939b4eee0a66d31ed21b51186668006b0e0ffe20338ecc7e00" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp310-cp310-win_amd64.whl", hash = "sha256:ad48ba3c3ffd48027e3a8de42fcea131a53a524ee9416ca4efb22f9ac6b7328d" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp311-cp311-manylinux_2_28_x86_64.whl", hash = "sha256:92568ac46b13a8c88b61589800b1b9c4629be091ea7ce080fc6fc622e11e0915" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp311-cp311-win_amd64.whl", hash = "sha256:85ecd729c947151eccea502853be6efc2c0029dc26e6e5148e04684aed008390" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:f64ef9bb91d71ab35d8384912a19f7419e35928685bc67544d58f45148334373" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp312-cp312-win_amd64.whl", hash = "sha256:650561ba326d21021243f5e064133dc62dc64d52f79623db5cd76637a9665f96" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:bc4fef193917b51db6b409acd3ffdec9286d877baac0aee5dcfbb72592d00bfc" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp313-cp313-win_amd64.whl", hash = "sha256:eb784cc75a66f3336a04ff3a992bf74160842132db69e8bdbb58b5ab9422c345" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp313-cp313t-manylinux_2_28_x86_64.whl", hash = "sha256:02faf51fbf5070592768fa935327d13a484b745faef38b0fee01d85cfb35f5bc" },
+    { url = "https://download.pytorch.org/whl/cu128/torchvision-0.22.1%2Bcu128-cp313-cp313t-win_amd64.whl", hash = "sha256:e5320bb2c9f69636f3dc18abc3291fe8c8e448cb9ef0112510a5413a5af3f8f2" },
 ]
 
 [[package]]
@@ -4828,8 +4850,8 @@ dependencies = [
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/transformer_engine-2.8.0%2Bcu128.torch27-cp310-cp310-linux_aarch64.whl", hash = "sha256:f18b7b77ea443fac7a8dc10019780fc208a4d189ec8f916557990bd40296527b" },
-    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/transformer_engine-2.8.0%2Bcu128.torch27-cp310-cp310-linux_x86_64.whl", hash = "sha256:abdd21ecf037a5c25c8acc27f0273cb5e226ff00f425192455967235cd3352f7" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/transformer_engine-2.8.0%2Bcu128.torch27-cp310-cp310-linux_aarch64.whl", hash = "sha256:9bb46932468d1f069e5d160f976b356a4b8975036273d75fe93fbc0bee6af0f3" },
+    { url = "https://github.com/nvidia-cosmos/cosmos-dependencies/releases/download/v1.2.0/transformer_engine-2.8.0%2Bcu128.torch27-cp310-cp310-linux_x86_64.whl", hash = "sha256:4fbfb452c66b89135ae140c5856c51b4ca31b91f530655d03ff986d68c4c1c0a" },
 ]
 
 [[package]]
