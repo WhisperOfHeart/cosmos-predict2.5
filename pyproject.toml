@@ -177,9 +177,9 @@ decord = [{ index = "cosmos", marker = "platform_machine == 'aarch64'" }]
 flash-attn = [{ index = "cosmos" }]
 natten = [{ index = "cosmos" }]
 transformer-engine = [{ index = "cosmos" }]
-torch = [{ index = "torch" }]
-torchvision = [{ index = "torch" }]
-triton = [{ index = "torch" }]
+torch = [{ index = "cosmos" }]
+torchvision = [{ index = "cosmos" }]
+triton = [{ index = "cosmos" }]
 cosmos-gradio = [{ path = "./packages/cosmos-gradio", editable = true }]
 
 [[tool.uv.index]]
@@ -187,11 +187,6 @@ name = "cosmos"
 # HACK(joallen)
 url = "https://spectralflight.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple"
 # url = "https://nvidia-cosmos.github.io/cosmos-dependencies/v1.2.0/cu128_torch27/simple"
-explicit = true
-
-[[tool.uv.index]]
-name = "torch"
-url = "https://download.pytorch.org/whl/cu128"
 explicit = true
 
 [tool.hatch.build.targets.sdist]
