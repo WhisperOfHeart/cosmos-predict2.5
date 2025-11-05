@@ -34,4 +34,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build --ulimit nofile=131071:131071 -f Dockerfile . -t cosmos-predict-2.5:$(date +%s)
+    - run: docker build --ulimit nofile=131071:131071 -f Dockerfile . -t cosmos-predict-2.5:$(date +%s)
