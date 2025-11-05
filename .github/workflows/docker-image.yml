@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "Try-docker-build" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "Try-docker-build" ]
   workflow_dispatch:
     inputs:
       logLevel:
