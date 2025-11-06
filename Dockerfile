@@ -59,7 +59,7 @@ RUN --mount=type=cache,target=/root/.cache/uv,sharing=locked \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     --mount=type=bind,source=.python-version,target=.python-version \
     --mount=type=bind,source=packages,target=packages \
-    uv sync --locked --no-install-project --no-dev && \
+    uv sync --locked --no-dev && \
     # Clean up unnecessary files to save space
     find /workspace/.venv -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true && \
     find /workspace/.venv -type f -name "*.pyc" -delete 2>/dev/null || true && \
