@@ -52,13 +52,17 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash 
 
 WORKDIR /workspace
 
+# Copy the project files needed for installation and execution
+COPY uv.lock pyproject.toml .python-version ./
+COPY packages ./packages
+COPY cosmos_predict2 ./cosmos_predict2
+COPY scripts ./scripts
+COPY bin ./bin
+COPY tools ./tools
+
 # Install the project's dependencies using the lockfile and settings
 # Use separate cache mount and clean up after installation to save space
 RUN --mount=type=cache,target=/root/.cache/uv,sharing=locked \
-    --mount=type=bind,source=uv.lock,target=uv.lock \
-    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    --mount=type=bind,source=.python-version,target=.python-version \
-    --mount=type=bind,source=packages,target=packages \
     uv sync --locked --no-dev && \
     # Clean up unnecessary files to save space
     find /workspace/.venv -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true && \
